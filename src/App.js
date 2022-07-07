@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import luc from './Images/main.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Header from './components/Header';
+import Dreamteam from './components/Dreamteam';
+import Forgalaxy from './components/Forgalaxy';
+import Footer from './components/Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div classNameName='container-fluid'>
+    <Header/>
+    <main className="clearfix">
+        <section className="float-start me-3 w-25">
+            <img className="w-100" src={luc} alt="Luke Skywalker"/>
+        </section>
+        <Dreamteam />
+        <Forgalaxy/>
+    </main>
+<Footer/>
+</div>
   );
 }
 
